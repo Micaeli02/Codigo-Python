@@ -1,0 +1,47 @@
+
+def menu():
+    print("\n--- Usuário ---")
+    print ("1-Cadastrar Pessoa")
+    print("2- Fazer login")
+    print("3- Pesquisar E-mail")
+    print("4- Achar o nome")
+    print("S- Sair")
+    return input ("Escolha uma das opções:")
+    
+    lista = []
+    
+while True:
+    opcao = menu()
+    
+    if opcao == "1":
+      
+       nome = input ("Digite o Nome")
+       email = input("Digite o email ")
+       senha = input ("Digite a Senha")
+       pessoa = Pessoa (email. nome. senha)
+       lista.apprend(pessoa)
+       
+    elif opcao == "2":
+        if listaa == []:
+            print("\nNinguem foi cadastrado")
+        else:
+            autSenha = input("\nColoque a senha: ")
+            autEmail = input("Coloque o email: ")
+        if (autSenha == pessoa.senha) | (autEmail == pessoa.email): 
+            print ("\nParabens! esta logado")
+        
+        else:
+            print("\nUsuario Inexistente")
+    elif opcao == "3":
+        if listaa == []:
+            print ("\nNinguem foi cadastrado")
+        else:
+            pesquisa = input("Coloque o e-mail para encontrar o nome: ")
+            lista.index(pesquisa)
+           
+  
+    elif opcao == "4":
+        print("Saindo...")
+        break
+    else: 
+        print("Escreve certo")
